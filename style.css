@@ -5,7 +5,9 @@ body{
     text-align: center;
 }
 
-
+h1{
+    padding-top: 50px;;
+}
 
 #stepOne {
     padding: 10px 5px;
