@@ -20,56 +20,57 @@
 
   <div class="container">
 
-  <h1>Cup Of Tea Simulator</h1>
+    <h1 class="display-3">Cup Of Tea Simulator</h1>
 
-  <div id="stepOne">
+    <div id="stepOne">
 
 
-    <p>1. Select your tea type preference and sugar amount: </p>
+      <p class="h3" >1. Select your tea type preference and sugar amount: </p>
 
-    <button type="button">Herbal Tea</button>
+      <button type="button" class="btn btn-light herbalTea">Herbal Tea</button>
 
-    <button type="button">Black Tea</button>
+      <button type="button" class="btn btn-light blackTea">Black Tea</button>
 
-    <input type="text" id="customTeaType" name="customTeaType" value="or type a custom tea here">
+     <input type="text" class="form-control  customTeaType" placeholder="or type a custom tea type preference here"> 
 
-    <br>
 
-    <label for="sugarAmount">How much sugar do you want in your tea?</label>
-    <input type="text" id="sugarAmount" name="sugarAmount" value="0">
+      <br>
 
+      <label for="sugarAmount" class="h4" >How much teaspoons of sugar do you want in your tea?</label>
+      <input type="text" id="sugarAmount" name="sugarAmount" placeholder="0">
+
+
+    </div>
+    
+
+    <div id="stepTwo"> 
+
+
+      <p class="h3" >2. Select the size of your tea cup:</p>
+
+      <label for="cupSize" class="h4" >Which tea cup size would you like?</label>
+        <select id="cupSize" name="cupSize">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+          <option value="xlarge">Extra Large</option>
+      </select>
+
+
+    </div>
+
+
+    <div id="makeTea"> 
+        <button type="button" class="btn btn-lg">Make Tea</button>
+    </div>
+
+
+
+    <div class="h3" id="resultMessage"> 
+        <span>Tea making message...</span>
+    </div>
 
   </div>
-  
-
-  <div id="stepTwo"> 
-
-
-    <p>2. Select the size of your tea cup:</p>
-
-    <label for="cupSize">Which tea cup size would you like?</label>
-      <select id="cupSize" name="cupSize">
-        <option value="small">Small</option>
-        <option value="medium">Medium</option>
-        <option value="large">Large</option>
-        <option value="xlarge">Extra Large</option>
-    </select>
-
-
-  </div>
-
-
-  <div id="makeTea"> 
-      <button type="button">Make Tea</button>
-  </div>
-
-
-
-  <div id="resultMessage"> 
-      <span>Tea making message...</span>
-  </div>
-
-</div>
 
   <script src="scripts.js"></script>
 
